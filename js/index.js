@@ -26,7 +26,24 @@ jQuery(document).ready(function($) {
 	    }     
 	    })
     });
+    //图片闪亮
+    /*var tupian=$(".fg");
+    for(var i=0;i<tupian.length;i++){
+      tupian[i].index=i;
+      tupian[i].onmouseover=function(){
+        animate(tupian[this.index],{opacity:0.85},50,function(){
+          animate(tupian[this.index],{opacity:1},50)
+        })
+      }
+    }*/
     
+    $('.fg').each(function(){
+        $('.fg').mouseover(function(){
+               $(this).animate({opacity:0.85},20,function(){
+          $(this).animate({opacity:1},20)
+        })
+        })
+    })
     //轮播
    function ZoomPic ()
 {
