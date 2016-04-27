@@ -8,19 +8,6 @@
     <script src="js/query.js"></script>
     <script src="js/index.js"></script>
 	<link rel="stylesheet" href="css/indexy.css">
-	<style>
-        #focus_Box{position:relative;width:710px;height:450px;margin:80px auto;}
-        #focus_Box ul{position:relative;width:710px;height:308px;position: absolute;left: 0;top:80px;}
-        #focus_Box li{z-index:0;position:absolute; width:0px;background:#787878;height:0px;top:146px;cursor:pointer;left:377px;border-radius:4px;box-shadow:1px 1px 12px rgba(200, 200, 200, 1)}
-        #focus_Box li img{width:100%;background:url(images/loading.gif) no-repeat center 50%;height:100%;vertical-align:top}
-        #focus_Box li p{position:absolute;left:0;bottom:0px;width:100%;height:40px;line-height:40px;background:url(../images/float-bg.png) repeat;text-indent:8px;color:#fff;}
-        #focus_Box li p span{display:inline-block;width:70%;height:40px;overflow:hidden;}
-        #focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:52px;height:52px;top:220px;}
-        #focus_Box .prev{background:url(./images/btn.png) left bottom no-repeat;left:0px}
-        #focus_Box .next{background:url(./images/btn.png) right bottom no-repeat;right:0px} 
-        #focus_Box .prev:hover{background-position:left top;}
-        #focus_Box .next:hover{background-position:right top;}
-	</style>
     <script src="js/ZoomPic.js"></script>
 </head>
 <body>
@@ -35,75 +22,82 @@
             </div>
             <div class="nav nav1">
                 <ul>
-                    <li class="nv-1">
-                        <a href=""title="1">注册人数：1284762</a>
-                    </li>
-                    <li class="nv-2">
-                        <a href="">立即注册</a>
-                    </li>
-                    <li class="nv-x">
+                    <label class="nv-1"id='0'>
+                        <span>注册人数：1284762</span>
+                    </label>
+                <input type="radio" name="a1"id="xz1">    
+                    <label class="nv-2"for="xz1"id='0'>
+                        <span>立即注册</span>
+                    </label>
+                <input type="radio" name="a1"id="x-z2">    
+                    <label class="nv-3" for="x-z2" id="5">
+                        <span>联系我们</span>
+                    </label>
+                <input type="radio" name="a1"id="xz3">    
+                    <label class="nv-4" for="xz3" id="4">
+                        <span>妈咪邻客</span>
+                    </label>
+                <input type="radio" name="a1"id="xz4">    
+                    <label class="nv-5"for="xz4" id="3">
+                        <span>妈咪创客</span>
+                    </label>  
+                <input type="radio" name="a1"id="xz5">                          
+                    <label class="nv-6"for="xz5" id="2">
+                        <span>妈咪享购</span>
+                    </label>
+                <input type="radio" name="a1"id="xz6">    
+                    <label class="nv-7"for="xz6" id="1">
+                        <span>首页</span>
+                    </label>  
+                    <li id="nv-x">
                         <span></span>
-                    </li>
-                    <li class="nv-3">
-                        <a href="javascript:void(0)"title="5">联系我们</a>
-                    </li>
-                    <li class="nv-4">
-                        <a href="javascript:void(0)"title="4">妈咪邻客</a>
-                    </li>
-                    <li class="nv-5">
-                        <a href="javascript:void(0)"title="3">妈咪创客</a>
-                    </li>                        
-                    <li class="nv-6">
-                        <a href="javascript:void(0)"title="2">妈咪享购</a>
-                    </li>
-                    <li class="nv-7">
-                        <a href="javascript:void(0)"title="1">首页</a>
-                    </li>                                    
+                    </li>                                  
                 </ul>
                     
             </div class="nav">
         </div>
     </div>
 	<!-- 头部 -->
-	<header style="z-index: 999;" class="hd">
-        <div class="container">
-            <div class="logo-text">
-                <a>
-                    <span>
-                        妈咪享购                        
-                    </span>
-                </a>
+	<!-- <header style="z-index: 999;" class="hd">
+            <div class="container">
+                <div class="logo-text">
+                    <a>
+                        <span>
+                            妈咪享购                        
+                        </span>
+                    </a>
+                </div>
+                <nav class="nav1">
+                    <ul>
+                        <label for="xz1">
+                            <a href="">立即注册</a>
+                        </label>
+                        <label for="xz2" class="nv-3">
+                            <a href="javascript:void(0)"title="5">联系我们</a>
+                        </label>
+                        <label for="xz3" class="nv-4">
+                            <a href="javascript:void(0)"title="4">妈咪邻客</a>
+                        </label>
+                        <label for="xz4" class="nv-5">
+                            <a href="javascript:void(0)"title="3">妈咪创客</a>
+                        </label>                        
+                        <label for="xz5" class="nv-6">
+                            <a href="javascript:void(0)"title="2">妈咪享购</a>
+                        </label>
+                        <label for="xz6" class="nv-7">
+                            <a href="javascript:void(0)"title="1">首页</a>
+                        </label>                                   
+                    </ul>
+                   <div>
+                       <span></span>
+                   </div>
+                </nav>
             </div>
-            <nav class="nav1">
-                <ul>
-                    <li>
-                        <a href="">立即注册</a>
-                    </li>
-                    <li class="nv-3">
-                        <a href="javascript:void(0)"title="5">联系我们</a>
-                    </li>
-                    <li class="nv-4">
-                        <a href="javascript:void(0)"title="4">妈咪邻客</a>
-                    </li>
-                    <li class="nv-5">
-                        <a href="javascript:void(0)"title="3">妈咪创客</a>
-                    </li>                        
-                    <li class="nv-6">
-                        <a href="javascript:void(0)"title="2">妈咪享购</a>
-                    </li>
-                    <li class="nv-7">
-                        <a href="javascript:void(0)"title="1">首页</a>
-                    </li>                                   
-                </ul>
-               <!--  <div>
-                   <span></span>
-               </div> -->
-            </nav>
-        </div>
-    </header>
+        </header> -->
     <!-- 头部结束 -->
     <!-- banner -->
     <div class="banner" id="index_1">
+    <img src="./img/banner/e8b869f0dcf51c155ff72fe0d4bf781c.jpg" alt="">
     	<div class="logo">
     		<span></span>
     	</div>
@@ -234,59 +228,60 @@
     	</div>
     </div>
     <!-- 妈咪创客 -->
-    <div class="ck" id="index_3">
-    	<div class="ck-box">
-    		<div class="ck-title">
-    			<p>妈咪创客</p>
-    			<p>MOM SHOPPING ENJOYMENT</p>
-    		</div>		
+    <div class="ck">
+        <div class="ck-box" id="index_3">
+            <div class="ck-title">
+                <p>妈咪创客</p>
+                <p>MOM SHOPPING ENJOYMENT</p>
+            </div>      
         </div>
         <div class="ck-banner">
              <img src="img/banner/]IQLSIJESSQ{X6BFRVI((VC.jpg" alt="">
              <ul>
-             	<li>
-             		<span>创时代</span>
-             	</li>
-             	<li>
-             		<p>
-             			商品100%的利润归于创客的妈咪
-             		</p>
-             	</li>
-             	<li>
-             		<p>
-             			打造妈妈们的永久被动收入
-             		</p>
-             	</li>
-             	<li>
-             		<p>
-             			实现财务自由不再是梦想
-             		</p>
-             	</li>
+                <li>
+                    <span>创时代</span>
+                </li>
+                <li>
+                    <p>
+                        商品100%的利润归于创客的妈咪
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        打造妈妈们的永久被动收入
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        实现财务自由不再是梦想
+                    </p>
+                </li>
              </ul>
         </div>
         <div class="ck-boxs">
-        	<ul class="ck-boxs1">
-        		<li>
-        			<img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
-        			<p>
-        				人物关系，清晰不变
-        			</p>
-        		</li>
-        		<li>
-        			<img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
-        			<p>
-        				不用开店，不担风险
-        			</p>
-        		</li>
-        		<li>
-        			<img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
-        			<p>
-        				一次分享，永久收益
-        			</p>
-        		</li>
-        	</ul>
+            <ul class="ck-boxs1">
+                <li>
+                    <img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
+                    <p>
+                        人物关系，清晰不变
+                    </p>
+                </li>
+                <li>
+                    <img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
+                    <p>
+                        不用开店，不担风险
+                    </p>
+                </li>
+                <li>
+                    <img src="img/banner/8P`RLLUR@PW{XM5RK8RE2PJ.jpg" alt="">
+                    <p>
+                        一次分享，永久收益
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
+    	
     <!-- 妈咪邻客 -->
     <div class="lk" id="index_4">
     	<div class="lk-box">
@@ -302,19 +297,19 @@
                     <span class="next">&nbsp;</span>
                     <ul>
                         <li>
-                            <img width="445" height="308" alt="这个时代 你所追求的是什么？" src="images/1.jpg" />
+                            <img width="690" height="530" src="img/banner/1.jpg" />
+                        </li>
+                        <!-- <li>
+                            <img width="690" height="530" src="img/2.jpg" />
                         </li>
                         <li>
-                            <img width="445" height="308" alt="我们所追求的不是拥有一切，而是拥有值得的一切" src="images/2.jpg" />
+                            <img width="690" height="530" src="img/3.jpg" />
+                        </li> -->
+                        <li>
+                            <img width="690" height="530" src="img/banner/4.jpg" />
                         </li>
                         <li>
-                            <img width="445" height="308" alt="一段旅程，两个城市，潮流正在被重塑" src="images/3.jpg" />
-                        </li>
-                        <li>
-                            <img width="445" height="308" alt="你的眼光、激情、创意和内涵，也在重塑着城市的潮流" src="images/4.jpg" />
-                        </li>
-                        <li>
-                            <img width="445" height="308" alt="在这里，抛开重重限制，释放真实自我" src="images/5.jpg" />
+                            <img width="690" height="530" src="img/banner/5.jpg" />
                         </li>
                     </ul>
                 </div>
@@ -436,6 +431,13 @@
             </ul>
     	</div>
     </div>
+<div class="wx">
+    <div class="wxm">
+        <p>
+            扫描二维码,立即加入我们 享受不一样的购物乐趣
+        </p>
+    </div>
+</div>    
 </body>
 
 </html>
