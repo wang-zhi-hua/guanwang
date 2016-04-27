@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	$('.banner').height($(window).height());
-	$('.ck-banner').height($(window).height());
+	/*$('.ck-banner').height($(window).height());*/
 
     //跳转    
     $(".nav1 ul li a").click(function(event) { 
