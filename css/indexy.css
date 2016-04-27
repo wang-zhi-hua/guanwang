@@ -18,20 +18,21 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
   left:0;
   top:0;
   z-index: 10;
+  background: rgba(0,0,0,0.5);
 }
 .hd-ct{
-	width: 73%;
+	width: 88%;
 	height: 70px;
 	margin: 0 auto; 
 }
 .lg-text{
 	float: left;
 	width: 9.2%;
-	height:60px;
+	height:70px;
 	color: #fff;
-	line-height: 60px;
+	line-height: 70px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 }
 .nav{
 	float: right;
@@ -49,19 +50,21 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	line-height: 60px;
 	float: right;
 	margin-left: 3%;
+	font-size: 16px;
 }
 .nav ul li:nth-child(2){
 	margin-left: 4%;
 }
+.nav ul li:nth-child(1){
+	font-size: 12px;
+}
 .nav ul li a{
 	color: #fff;
 }
-.nav .sx span{
-	height: 18px;
+.nav .nv-x span{
+	height: 10px;
 	border-left: 1px solid #fff;
-	position: absolute;
-	right: 35.2%;
-	top:32px;
+	font-size: 10px;
 }
 header{
   width: 100%;
@@ -71,6 +74,7 @@ header{
   left:0;
   top:0;
   display: none;
+  border-bottom:1px solid #000; 
 }
 .container{
 	width: 73%;
@@ -133,10 +137,10 @@ nav div span{
 }
 .banner .yinying{
 	width: 90%;
-	height: 110px;
+	height: 90px;
 	position: absolute;
 	left: 5%;
-	bottom:12.8%;
+	bottom:5.8%;
 }
 .banner .yinying .yinying1{
 	display: block;
@@ -156,14 +160,14 @@ nav div span{
     top:0;
 }
 .banner .yinying span:nth-child(2){
-	line-height: 80px;
+	line-height: 60px;
 }
 .banner .yinying span:nth-child(3){
-	line-height: 160px;
+	line-height: 120px;
 }
 .xg{
 	width: 100%;
-	height: 1800px;
+	height: 1680px;
 }
 .xg-box{
 	width: 73%;
@@ -219,7 +223,7 @@ nav div span{
 }
 .xg-describe{
 	width: 100%;
-	height: 870px;
+	height: 788px;
 }
 .xg-describe ul{
   width: 100%;
@@ -227,46 +231,48 @@ nav div span{
 }
 .xg-describe ul li{
   width: 32%;
-  height: 420px;
+  height: 380px;
   float: left;
   margin-left: 1%;
   border: 1px solid #e6e6e6;
   color: #818181;
   margin-top: 10px;
+  letter-spacing:2px;
 }
 .xg-describe ul li img{
-  width: 94%;
+  width: 92%;
   height: 215px;
-  margin-left: 3%;
+  margin-left: 4%;
   margin-top:10px ;
 }
 .xg-describe ul li h2:nth-child(2){
   width: 100%;
   text-align:center;
-  margin-top: 35px;
+  margin-top: 22px;
 }
 .xg-describe ul li p:nth-child(3){
   width:85%;
   margin-left: 7.5%;
-  margin-top: 35px;
+  margin-top: 20px;
   text-align: center; 
 }
 .xg-describe ul li p span{
-  font-weight: bold;
+  font-weight: 600;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 28px;
 }
 .xg-from{
   width:100%;
-  height: 155px;
+  height: 95px;
+  color: #818181;
 }
 .xg-from p{
   width:51.7%;
-  height: 50px;
+  height: 38px;
   font-size: 16px;
   border: 1px solid #e6e6e6;
   text-align: center;
-  line-height: 50px;
+  line-height: 38px;
   margin-left: 24.15%;
   margin-top: 60px;
 }
@@ -308,7 +314,7 @@ nav div span{
 }
 .ck{
 	width: 100%;
-	height:1400px;
+	height:1140px;
 	background: #f7f7f7;
 }
 .ck-box{
@@ -359,23 +365,27 @@ nav div span{
 	text-align: center;
 	margin-top: 15.7%;
 } 
-.ck-banner ul li p{
-	font-size: 23px;
+.ck-banner ul li span{
+	font-size: 36px;
 	color: #252525;
+}
+.ck-banner ul li p{
+	font-size: 26px;
+	color: #4d4d4d;
 }
 .ck-boxs{
 	width: 73%;
-	height: 400px;
+	height: 310px;
 	margin: 0 auto;
 }
 .ck-boxs .ck-boxs1{
 	width: 100%;
-	height: 400px;
-	margin-top: 25px;
+	height: 310px;
+	margin-top: 24px;
 } 
 .ck-boxs .ck-boxs1 li{
 	width: 32%;
-	height: 400px;
+	height: 310px;
 	float: left;
 }
 .ck-boxs .ck-boxs1 li:nth-child(2),.ck-boxs .ck-boxs1 li:nth-child(3){
@@ -388,7 +398,7 @@ nav div span{
 .ck-boxs .ck-boxs1 li p{
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 31px;
 	color: #818181;
 }
 .lk{
