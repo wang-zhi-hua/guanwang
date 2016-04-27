@@ -410,10 +410,12 @@ nav div span{
 .lk-box .lk-title p:nth-child(1){
 	padding-top: 20px;
     line-height: 60px;
+    text-align: center;
 }
 .lk-box .lk-title p:nth-child(2){
     line-height: 40px;
     font-size: 28px;
+    text-align: center;
 }
 .lk-lunbo{
 	width: 73%;
