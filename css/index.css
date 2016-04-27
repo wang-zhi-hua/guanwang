@@ -649,12 +649,9 @@ nav div span{
 	margin:0 auto;
 }
 #focus_Box ul{
-	position:relative;
 	width:710px;
 	height:530px;
-	position: absolute;
-	left: 0;
-	top:35px;
+	margin-top:40px;
 }
 #focus_Box li{
 	z-index:0;
@@ -662,9 +659,9 @@ nav div span{
 	width:0px;
 	background:#787878;
 	height:0px;
-	top:146px;
+	top:0px;
 	cursor:pointer;
-	left:377px;
+	left:0;
 	border-radius:4px;
 	box-shadow:1px 1px 12px rgba(200, 200, 200, 1)
 }
