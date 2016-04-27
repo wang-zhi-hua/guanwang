@@ -3,7 +3,6 @@ jQuery(document).ready(function($) {
 	$('.ck-banner').height($(window).height());
     $('.wx').height($(window).height());
     /*微信*/
-    $('.wx').css('display','none');
     $('.wx').click(function(){
     	$('.wx').css('display','none');
     })

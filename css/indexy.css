@@ -705,6 +705,7 @@ right:0;
 	top:0;
 	z-index: 3000;
 	background: rgba(0,0,0,0.4);
+	display: none;
 }
 .wxm{
 	width: 400px;
@@ -725,3 +726,4 @@ right:0;
 input{
 	display: none;
 }
+
