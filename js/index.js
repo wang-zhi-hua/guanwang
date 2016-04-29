@@ -36,6 +36,7 @@ jQuery(document).ready(function($) {
         })
         })
     })
+    //轮播2
     //轮播
    function ZoomPic ()
 {

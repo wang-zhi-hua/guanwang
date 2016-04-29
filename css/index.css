@@ -320,26 +320,26 @@ nav div span{
   border: 1px solid #e6e6e6;
 }
 .xg-brand ul li{
-  width:11%;
+  width:15%;
   height: 115px;
   float: left; 
 }
 .xg-brand ul li:nth-child(1){
-  margin-left: 5.5%;
+  margin-left: 2.5%;
 }
 .xg-brand ul li:nth-child(2),.xg-brand ul li:nth-child(3),.xg-brand ul li:nth-child(4),.xg-brand ul li:nth-child(5){
-  margin-left: 7.8%;
+  margin-left: 5%;
 }
 .xg-brand ul li:nth-child(6),.xg-brand ul li:nth-child(11){
-  margin-left: 5.5%;
+  margin-left:2.5%;
   margin-top: 70px;
 }
 .xg-brand ul li:nth-child(7),.xg-brand ul li:nth-child(8),.xg-brand ul li:nth-child(9),.xg-brand ul li:nth-child(10){
-  margin-left: 7.8%;
+  margin-left: 5%;
   margin-top: 70px;
 }
 .xg-brand ul li:nth-child(12),.xg-brand ul li:nth-child(13),.xg-brand ul li:nth-child(14),.xg-brand ul li:nth-child(15){
-  margin-left: 7.8%;
+  margin-left: 5%;
   margin-top: 70px;
 }
 .ck{
@@ -467,7 +467,7 @@ nav div span{
 	width: 73%;
     height: 170px;
     position: absolute;
-    bottom:60px;
+    bottom:0px;
     left: 13.5%;
 }
 .lk-content ul{
@@ -477,21 +477,15 @@ nav div span{
 }
 .lk-content ul li:nth-child(1){
 	width: 100%;
-	margin-top: 45px;
+	margin-top: 55px;
 	text-align: center;
 	font-size: 24px;
 }
 .lk-content ul li:nth-child(2){
 	width: 100%;
-	margin-top: 45px;
-	text-align: center;
-	font-size: 30px;
-}
-.lk-content ul li:nth-child(3){
-	width: 100%;
 	margin-top: 20px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 30px;
 }
 .ft-top{
     width: 100%;
@@ -637,7 +631,12 @@ nav div span{
     float: left;
     margin-left: 10px;
 }
+.ft-bottom-box ul li:nth-child(1){
+    margin-left: 0;
+}
 .ft-bottom-box ul li img{
+	width: 100%;
+	height: 100%;
     border-radius: 4px;
 }
 
@@ -664,6 +663,36 @@ nav div span{
 	left:0;
 	border-radius:4px;
 	box-shadow:1px 1px 12px rgba(200, 200, 200, 1)
+}
+#focus_Box ul li p{
+	width: 100%;
+	height: 40px;
+	background: #f7f7f7;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	position: absolute;
+	left:0 ;
+	bottom:-100px;
+	color: #818181;
+}
+.zg-left{
+	width: 30%;
+	height: 40px;
+	background: #f7f7f7;
+	position: absolute;
+	right: 0;
+	bottom: 140px;
+	z-index: 9;
+}
+.zg-right{
+	width: 30%;
+	height: 40px;
+	background: #f7f7f7;
+	position: absolute;
+	left: 0;
+	bottom: 140px;
+	z-index: 9;
 }
 #focus_Box .prev,#focus_Box .next {
 display:block;
