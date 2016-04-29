@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
         })
         })
     })
-    //轮播2
+
     //轮播
    function ZoomPic ()
 {
@@ -58,15 +58,8 @@ ZoomPic.prototype =
         this._doPrev = function () {return _this.doPrev.apply(_this)};
         this._doNext = function () {return _this.doNext.apply(_this)};
         this.options = [
-            /*{width:476, height:210, top:40, left:0, zIndex:1},
-            {width:426, height:250, top:20, left:50, zIndex:2},
-            {width:654, height:290, top:0, left:150, zIndex:3},
-            {width:426, height:250, top:20, left:480, zIndex:2},
-            {width:476, height:210, top:40, left:476, zIndex:1},*/
             {width:690, height:530, top:0, left:0, zIndex:1},
-            /*{width:500, height:530, top:20, left:50, zIndex:2},*/
             {width:690, height:530, top:0, left:140, zIndex:3},
-            /*{width:690, height:530, top:20, left:100, zIndex:2},*/
             {width:690, height:530, top:0, left:290, zIndex:1},
         ];
         for (var i = 0; i < this.aLi.length; i++) this.aSort[i] = this.aLi[i];
