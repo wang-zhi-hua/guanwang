@@ -3,11 +3,12 @@ jQuery(document).ready(function($) {
 	$('.ck-banner').height($(window).height());
     $('.wx').height($(window).height());
     /*微信*/
-    $('.wx').click(function(){
-    	$('.wx').css('display','none');
-    })
+    
     $('.nv-2').click(function(){
     	$('.wx').css('display','block');
+    })
+    $('.wx').click(function(){
+        $(this).css('display','none');
     })
     //跳转    
     $(".nav1 ul label").click(function(event) { 

@@ -16,11 +16,10 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
   min-width: 1180px;
   width: 100%;
   height:70px;
-  position:fixed;
+  position:absolute;
   left:0;
   top:0;
   z-index: 10;
-  background: rgba(0,0,0,0.7);
 }
 .hd-ct{
 	width: 88%;
@@ -38,7 +37,9 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	background: rgb(235,77,126);
     padding:0 8px 0 8px; 
     margin-top: 5px;
-    border-radius: 4px;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .nav{
 	float: right;
@@ -53,12 +54,12 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	position: relative;
 }
 .nav ul label{
-	width: 95px;
+	width: 80px;
 	height: 60px;
 	text-align: center;
 	line-height: 75px;
 	float: right;
-	font-size: 16px;
+	font-size: 14px;
 	padding-bottom: 10px; 
 	cursor: pointer;
 	display: inline-block;
@@ -70,10 +71,10 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	width: 1px;
 	height: 10px;
 	position: absolute;
-	right:235px;
+	right:220px;
 	top:26px; 
 }
-.nav ul label:nth-child(1){
+.nav ul .nv-1{
 	width: 140px;
 	font-size: 12px;
 }
@@ -108,8 +109,6 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 .banner .logo{
     width: 110px;
     height: 110px;
-    background-image: url('../img/logo.png');
-    background-size: cover;
     position: absolute;
     left: 48%;
     top:40%;
@@ -128,7 +127,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	background-image: url('../img/tou.png');
 	background-size: cover;
 }
-.banner .yinying span:nth-child(2),.banner .yinying span:nth-child(3){
+.banner .yinying .text-top,.banner .yinying .text-bottom{
 	width: 100%;
 	height: 100%;
     text-align: center;
@@ -138,10 +137,10 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
     left: 0;
     top:0;
 }
-.banner .yinying span:nth-child(2){
+.banner .yinying .text-top{
 	line-height: 60px;
 }
-.banner .yinying span:nth-child(3){
+.banner .yinying .text-bottom{
 	line-height: 120px;
 }
 .xg{
@@ -152,7 +151,6 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	width: 73%;
     height: 100%;
 	margin: 0 auto;
-
 }
 .xg-box .xg-title{
 	width: 100%;
@@ -162,11 +160,11 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	font-weight: bold;
 	color:#eb4d7e;
 }
-.xg-box .xg-title p:nth-child(1){
+.xg-box .xg-title .xg-mami{
 	padding-top: 20px;
     line-height: 60px;
 }
-.xg-box .xg-title p:nth-child(2){
+.xg-box .xg-title .xg-en{
     line-height: 40px;
     font-size: 28px;
 }
@@ -184,7 +182,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	line-height: 80px;
 	color:#818181;
 }
-.xg-because span:nth-child(1){
+.xg-because .xg-bc1{
 	width: 33%;
 	height: 1px;
 	border-bottom: 1px solid #818181;
@@ -192,7 +190,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	left: 0;
 	top:50%;
 }
-.xg-because span:nth-child(3){
+.xg-because .xg-bc3{
 	width: 33%;
 	height: 1px;
 	border-bottom: 1px solid #818181;
@@ -223,12 +221,12 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
   margin-left: 4%;
   margin-top:10px ;
 }
-.xg-describe ul li h2:nth-child(2){
+.xg-describe ul li h2{
   width: 100%;
   text-align:center;
   margin-top: 30px;
 }
-.xg-describe ul li p:nth-child(3){
+.xg-describe ul li .xg-ds{
   width:85%;
   margin-left: 7.5%;
   margin-top: 20px;
@@ -271,21 +269,21 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
   height: 115px;
   float: left; 
 }
-.xg-brand ul li:nth-child(1){
+.xg-brand ul .xg-brand1{
   margin-left: 2.5%;
 }
-.xg-brand ul li:nth-child(2),.xg-brand ul li:nth-child(3),.xg-brand ul li:nth-child(4),.xg-brand ul li:nth-child(5){
+.xg-brand ul .xg-brand2,.xg-brand ul .xg-brand3,.xg-brand ul .xg-brand4,.xg-brand ul .xg-brand5{
   margin-left: 5%;
 }
-.xg-brand ul li:nth-child(6),.xg-brand ul li:nth-child(11){
+.xg-brand ul .xg-brand6,.xg-brand ul .xg-brand11{
   margin-left:2.5%;
   margin-top: 50px;
 }
-.xg-brand ul li:nth-child(7),.xg-brand ul li:nth-child(8),.xg-brand ul li:nth-child(9),.xg-brand ul li:nth-child(10){
+.xg-brand ul .xg-brand7,.xg-brand ul .xg-brand8,.xg-brand ul .xg-brand9,.xg-brand ul .xg-brand10{
   margin-left: 5%;
   margin-top: 50px;
 }
-.xg-brand ul li:nth-child(12),.xg-brand ul li:nth-child(13),.xg-brand ul li:nth-child(14),.xg-brand ul li:nth-child(15){
+.xg-brand ul .xg-brand12,.xg-brand ul .xg-brand13,.xg-brand ul .xg-brand14,.xg-brand ul .xg-brand15{
   margin-left: 5%;
   margin-top: 50px;
 }
@@ -306,11 +304,11 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	font-weight: bold;
 	color:#eb4d7e;
 }
-.ck-box .ck-title p:nth-child(1){
+.ck-box .ck-title .ck-mami{
 	padding-top: 20px;
     line-height: 60px;
 }
-.ck-box .ck-title p:nth-child(2){
+.ck-box .ck-title .ck-en{
     line-height: 40px;
     font-size: 28px;
 }
@@ -362,7 +360,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	height: 310px;
 	float: left;
 }
-.ck-boxs .ck-boxs1 li:nth-child(2),.ck-boxs .ck-boxs1 li:nth-child(3){
+.ck-boxs .ck-boxs1  .ck-boxs12,.ck-boxs .ck-boxs1 .ck-boxs13{
 	margin-left: 1.5%;
 }
 .ck-boxs .ck-boxs1 li img{
@@ -393,12 +391,12 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	font-weight: bold;
 	color:#eb4d7e;
 }
-.lk-box .lk-title p:nth-child(1){
+.lk-box .lk-title .lk-mami{
 	padding-top: 20px;
     line-height: 60px;
     text-align: center;
 }
-.lk-box .lk-title p:nth-child(2){
+.lk-box .lk-title .lk-en{
     line-height: 40px;
     font-size: 28px;
     text-align: center;
@@ -421,13 +419,13 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	height: 100%;
 	color: #818181;
 }
-.lk-content ul li:nth-child(1){
+.lk-content ul .lk-sj{
 	width: 100%;
 	margin-top: 55px;
 	text-align: center;
 	font-size: 24px;
 }
-.lk-content ul li:nth-child(2){
+.lk-content ul .lk-cs{
 	width: 100%;
 	margin-top: 20px;
 	text-align: center;
@@ -464,66 +462,66 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
     font-size: 12px;
     color: #666;
 }
-.ft-top-box ul:nth-child(1){
+.ft-top-box  .ft-top-boxs1{
     height: 165px;
 }
-.ft-top-box ul:nth-child(2){
+.ft-top-box .ft-top-boxs2{
     height: 165px;    
     margin-left: 13.1%;
 }
-.ft-top-box ul:nth-child(3){
+.ft-top-box .ft-top-boxs3{
     height: 165px;
     margin-left: 10.1%;
 }
-.ft-top-box ul:nth-child(4){
+.ft-top-box .ft-top-boxs4{
     height: 165px;
     margin-left: 13.1%;
     text-align: center;
 }
-.ft-top-box ul li:nth-child(1){
+.ft-top-box ul .ft-top-boxs11{
     font-size: 16px;
     font-weight: bold;
     color: #595959;
 }
-.ft-top-box ul li:nth-child(2){
+.ft-top-box ul .ft-top-boxs12{
     padding-top: 15px;
     line-height: 19px;
 }
-.ft-top-box ul:nth-child(1) li:nth-child(3){
+.ft-top-box .ft-top-boxs1 .ft-top-boxs13{
     padding-top: 40px;
 }
-.ft-top-box ul:nth-child(1) li:nth-child(4){
+.ft-top-box .ft-top-boxs1 .ft-top-boxs14{
     padding-top: 20px;
 }
-.ft-top-box ul:nth-child(2) li:nth-child(3){
+.ft-top-box .ft-top-boxs2 .ft-top-boxs13{
     padding-top: 4px;
 }
-.ft-top-box ul:nth-child(2) li:nth-child(4){
+.ft-top-box .ft-top-boxs2 .ft-top-boxs14{
     padding-top: 4px;
 }
-.ft-top-box ul:nth-child(2) li:nth-child(5){
+.ft-top-box .ft-top-boxs2 .ft-top-boxs15{
     padding-top: 14px;
 }
-.ft-top-box ul:nth-child(2) li:nth-child(6){
+.ft-top-box .ft-top-boxs2 .ft-top-boxs16{
     padding-top: 20px;
 }
-.ft-top-box ul:nth-child(3) li:nth-child(3){
+.ft-top-box .ft-top-boxs3 .ft-top-boxs13{
     padding-top: 14px;
 }
-.ft-top-box ul:nth-child(4){
+.ft-top-box .ft-top-boxs4{
     width: 10%;
 }
-.ft-top-box ul:nth-child(4) li:nth-child(2){
+.ft-top-box .ft-top-boxs4 .ft-top-boxs12{
     width: 100%;
     height: 90px;
 }
-.ft-top-box ul:nth-child(4) li:nth-child(2) img{
+.ft-top-box .ft-top-boxs4 .ft-top-boxs12 img{
     width: 90px;
     height: 90px;
     display: block;
     margin: 0 auto;
 }
-.ft-top-box ul:nth-child(4) li:nth-child(3){
+.ft-top-box .ft-top-boxs4 .ft-top-boxs13{
    margin-top: 13px;
 }
 .ft-middle{
@@ -562,28 +560,30 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	color: #fff;
 	font-size: 12px;
 }
-.ft-bottom-box p:nth-child(1){
+.ft-bottom-box .ft-bottom-box1{
     padding-top: 10px;
 } 
-.ft-bottom-box p:nth-child(2){
+.ft-bottom-box .ft-bottom-box2{
 	padding-top: 10px;
 }
 .ft-bottom-box ul{
-	margin-top: 20px;
+	margin-top: 30px;
 }
 .ft-bottom-box ul li{
-    width: 90px;
-    height: 35px;
+    width: 85px;
+    height: 28px;
     float: left;
     margin-left: 10px;
 }
-.ft-bottom-box ul li:nth-child(1){
+.ft-bottom-box ul .ft-bottom-box3{
     margin-left: 0;
 }
 .ft-bottom-box ul li img{
 	width: 100%;
 	height: 100%;
-    border-radius: 4px;
+    -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari 和 Chrome */
+  border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 
 
@@ -607,7 +607,9 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	top:0px;
 	cursor:pointer;
 	left:0;
-	border-radius:4px;
+	-moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari 和 Chrome */
+  border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	box-shadow:1px 1px 12px rgba(200, 200, 200, 1)
 }
 #focus_Box ul li p{
@@ -662,11 +664,13 @@ right:0;
 }
 #focus_Box .prev:hover{
 background:url(../img/1.1.png) 52px 67px rgba(0,0,0,0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
 left:0;
 }
 
 #focus_Box .next:hover{
 background:url(../img/1.2.png) 52px 67px rgba(0,0,0,0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
 right:0;
 }
 
@@ -677,6 +681,7 @@ right:0;
 	top:0;
 	z-index: 3000;
 	background: rgba(0,0,0,0.4);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
 	display: none;
 }
 .wxm{
@@ -686,7 +691,9 @@ right:0;
 	background-size: cover;
 	margin: 13% auto;
 	position: relative;
-	border-radius: 9px;
+	-moz-border-radius: 9px; /* Firefox */
+    -webkit-border-radius: 9px; /* Safari 和 Chrome */
+    border-radius: 9px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .wxm p{
 	width: 200px;
