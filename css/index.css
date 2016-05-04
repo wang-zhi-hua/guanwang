@@ -22,24 +22,20 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
   z-index: 10;
 }
 .hd-ct{
-	width: 88%;
+	width: 95%;
 	height: 70px;
 	margin: 0 auto; 
 }
 .lg-text{
+	width: 68px;
+	height: 64px;
 	float: left;
-	height:70px;
-	color: #fff;
-	line-height: 70px;
-	text-align: center;
-	font-size: 20px;
-	margin-left: 1.5%;
-	background: rgb(235,77,126);
-    padding:0 8px 0 8px; 
-    margin-top: 5px;
-    -moz-border-radius: 4px; /* Firefox */
-    -webkit-border-radius: 4px; /* Safari 和 Chrome */
-    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.lg-text img{
+	width: 100%;
+	height: 100%;
+	margin-top: 26px;
+	margin-left: 16%;
 }
 .nav{
 	float: right;
@@ -51,32 +47,23 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	width: 100%;
 	height: 60px;
 	margin-bottom: 10px;
+	margin-right: 20px;
 	position: relative;
 }
 .nav ul label{
-	width: 80px;
 	height: 60px;
 	text-align: center;
 	line-height: 75px;
 	float: right;
-	font-size: 14px;
+	font-size: 15px;
 	padding-bottom: 10px; 
+	margin-right: 24px;
 	cursor: pointer;
 	display: inline-block;
 }
-.nav ul .nv-7{
-   width: 65px;
-}
-.nav ul li{
-	width: 1px;
-	height: 10px;
-	position: absolute;
-	right:220px;
-	top:26px; 
-}
 .nav ul .nv-1{
-	width: 140px;
-	font-size: 12px;
+	font-size: 15px;
+	text-align: left;
 }
 .nav ul label span{
 	
@@ -84,19 +71,23 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	height: 70px;
 	color: #fff;
 }
+.nav ul .nv-2 span{
+	border: 1px solid #fff;
+	padding: 2px 2px 2px 2px;
+}
 .nav #nv-x span{
 	height: 10px;
 	border-left: 1px solid #fff;
 	font-size: 10px;
 }
-.nav input:checked+label{
+/* .nav input:checked+label{
 	border-top: 3px solid #eb4d7e;
 	line-height: 70px;
 }
 .nav input:checked  label a{
 	border-top: 3px solid #eb4d7e;
 	line-height: 70px;
-}
+} */
 .banner{
 	width: 100%;
 	position: relative;	
@@ -118,14 +109,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	height: 90px;
 	position: absolute;
 	left: 5%;
-	bottom:5.8%;
-}
-.banner .yinying .yinying1{
-	display: block;
-	width: 100%;
-	height: 100%;
-	background-image: url('../img/tou.png');
-	background-size: cover;
+	bottom:50%;
 }
 .banner .yinying .text-top,.banner .yinying .text-bottom{
 	width: 100%;
@@ -138,10 +122,12 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
     top:0;
 }
 .banner .yinying .text-top{
-	line-height: 60px;
+	font-size: 72px;
+	line-height: 30px;
 }
 .banner .yinying .text-bottom{
-	line-height: 120px;
+	font-size: 24px;
+	line-height: 220px;
 }
 .xg{
 	width: 100%;
@@ -294,7 +280,6 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 	width: 73%;
 	margin: 0 auto;
 	height: 130px;
-	margin-bottom: 30px;
 }
 .ck-box .ck-title{
 	width: 100%;
@@ -319,31 +304,6 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 .ck-banner img{
 	width: 100%;
 	height:100%;
-}
-.ck-banner ul{
-    width: 48.6%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top:0;
-}
-.ck-banner ul li{
-	width: 100%;
-	text-align: center;
-	margin-top: 8.7%;
-} 
-.ck-banner ul li:nth-child(1){
-	width: 100%;
-	text-align: center;
-	margin-top: 15.7%;
-} 
-.ck-banner ul li span{
-	font-size: 36px;
-	color: #252525;
-}
-.ck-banner ul li p{
-	font-size: 26px;
-	color: #4d4d4d;
 }
 .ck-boxs{
 	width: 73%;
@@ -417,7 +377,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 .lk-content ul{
 	width: 100%;
 	height: 100%;
-	color: #818181;
+	color: #eb4d7e;
 }
 .lk-content ul .lk-sj{
 	width: 100%;
@@ -433,23 +393,24 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 }
 .ft-top{
     width: 100%;
-    height: 270px;
+    height: 195px;
     position: relative;
 }
 .ft-top-box1{
-    width:100%;
-    height: 100px;
+    width:374px;
+    height: 188px;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    right: 11%;
+    top: 0;
 }
 .ft-top-box1 img{
-    width:100%;
-    height: 100px;
+    width:374px;
+    height: 188px;
+    margin-top: 5px;
 }
 .ft-top-box{
     width: 73%;
-    height: 270px;
+    height: 195px;
     position: absolute;
     left: 13.5%;
     top:0;   
@@ -458,9 +419,9 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 .ft-top-box ul{
     width: 15.6%;
     float: left;
-    margin-top: 53px;
+    margin-top: 30px;
     font-size: 12px;
-    color: #666;
+    color: #333;
 }
 .ft-top-box  .ft-top-boxs1{
     height: 165px;
@@ -475,7 +436,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
 }
 .ft-top-box .ft-top-boxs4{
     height: 165px;
-    margin-left: 13.1%;
+    margin-left: 8%;
     text-align: center;
 }
 .ft-top-box ul .ft-top-boxs11{
@@ -484,7 +445,7 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a,input{
     color: #595959;
 }
 .ft-top-box ul .ft-top-boxs12{
-    padding-top: 15px;
+    padding-top: 10px;
     line-height: 19px;
 }
 .ft-top-box .ft-top-boxs1 .ft-top-boxs13{

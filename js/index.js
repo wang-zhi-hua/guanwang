@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
     $(".nav1 ul label").click(function(event) { 
         var index=this.id;
         var id='#'+'index_'+index;
-        $("html,body").animate({scrollTop: $(id).offset().top-70}, 1000);
+        $("html,body").animate({scrollTop: $(id).offset().top-0}, 1000);
     });
     //下拉搜索框
 	$(function() {  
